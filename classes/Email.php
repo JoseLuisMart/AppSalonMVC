@@ -24,8 +24,8 @@ class Email {
         $mail->Host = 'smtp.mailtrap.io' ;//'smtp.gmail.com';
         $mail->SMTPAuth = true;
         $mail->Port = 2525; //587; // 465 para SSL y 587 para tls
-        $mail->Username = 'df34b0b213e712'; //'joluma1995@gmail.com'; // correo electronico de gmail
-        $mail->Password = 'cfe4c15ab2b25c'; //'fbylmiybgshhmmyp';
+        $mail->Username = 'df34b0b213e712'; //
+        $mail->Password = 'cfe4c15ab2b25c'; //
         $mail->SMTPSecure = 'tls'; //PHPMailer::ENCRYPTION_STARTTLS; // PHPMailer::ENCRYPTION_SMTPS para ssl, ENCRYPTION_STARTTLS para tls
 
         // Configurar el contenido del mail
@@ -41,7 +41,7 @@ class Email {
         // Definir el contenido
         $contenido = '<html>';
         $contenido .= '<p>Hola <strong>' . $this->nombre . '</strong> Has creado tu cuenta en AppSalon, solo debes confirmarla presionando el siguiente enlace</p>';
-        $contenido .= '<p> Presiona aquí: <a href="http://localhost:3000/confirmar-cuenta?token=' . $this->token . '">Confirmar Cuenta</a> </p>';
+        $contenido .= '<p> Presiona aquí: <a href="http://https://secret-atoll-38976.herokuapp.com/confirmar-cuenta?token=' . $this->token . '">Confirmar Cuenta</a> </p>';
         $contenido .= '<p>Si tu no solicitaste esta cuenta, puedes ignorar el mensaje!</p>';
         $contenido .= '</html>';
 
@@ -64,8 +64,8 @@ class Email {
         $mail->Host = 'smtp.mailtrap.io' ;//'smtp.gmail.com';
         $mail->SMTPAuth = true;
         $mail->Port = 2525; //587; // 465 para SSL y 587 para tls
-        $mail->Username = 'df34b0b213e712'; //'joluma1995@gmail.com'; // correo electronico de gmail
-        $mail->Password = 'cfe4c15ab2b25c'; //'fbylmiybgshhmmyp';
+        $mail->Username = 'df34b0b213e712'; 
+        $mail->Password = 'cfe4c15ab2b25c'; 
         $mail->SMTPSecure = 'tls'; //PHPMailer::ENCRYPTION_STARTTLS; // PHPMailer::ENCRYPTION_SMTPS para ssl, ENCRYPTION_STARTTLS para tls
 
         // Configurar el contenido del mail
@@ -81,7 +81,7 @@ class Email {
         // Definir el contenido
         $contenido = '<html>';
         $contenido .= '<p>Hola <strong>' . $this->nombre . '</strong> Has solicitado reestablecer tu password, sigue el siguiente enlace para hacerlo.</p>';
-        $contenido .= '<p> Presiona aquí: <a href="http://localhost:3000/recuperar?token=' . $this->token . '">Reestablecer Password</a> </p>';
+        $contenido .= '<p> Presiona aquí: <a href="http://https://secret-atoll-38976.herokuapp.com//recuperar?token=' . $this->token . '">Reestablecer Password</a> </p>';
         $contenido .= '<p>Si tu no solicitaste esta cuenta, puedes ignorar el mensaje!</p>';
         $contenido .= '</html>';
 
